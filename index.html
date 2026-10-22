@@ -273,6 +273,78 @@ section{padding:78px 0}.section-kicker{font-size:.77rem;letter-spacing:.17em;tex
   .portrait-img{width:calc(100% - 112px)!important;height:94%!important}
 }
 
+
+/* Practical consulting visuals: process mapping, redesign and prioritization */
+.consulting-visuals{margin-top:34px;display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}
+.visual-panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 8px 26px #102a4309;min-width:0}
+.visual-panel h3{color:var(--navy);margin:5px 0 6px;font-size:1.15rem}
+.visual-panel .visual-sub{font-size:.88rem;color:var(--muted);margin:0 0 18px}
+.visual-eyebrow{font-size:.7rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-dark)}
+.process-lane{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;align-items:stretch}
+.process-node{position:relative;min-height:91px;padding:12px 8px;border:1px solid #f0d8cb;border-radius:10px;background:#fff8f4;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.process-node:not(:last-child):after{content:"›";position:absolute;right:-13px;top:30%;font-size:25px;line-height:1;color:var(--orange);font-weight:900}
+.process-node .node-icon{font-size:1.25rem;color:var(--orange);line-height:1.2;margin-bottom:7px}
+.process-node b{font-size:.77rem;color:var(--navy);line-height:1.25}
+.process-node small{font-size:.69rem;color:var(--muted);margin-top:4px;line-height:1.25}
+.process-node.to-be{background:#effaf5;border-color:#bce5d0}
+.process-node.to-be .node-icon{color:#16855b}
+.process-node.to-be:not(:last-child):after{color:#16855b}
+.map-label{display:flex;align-items:center;gap:8px;margin:18px 0 9px;color:var(--navy);font-size:.77rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.map-label:before{content:"";width:18px;height:3px;background:var(--orange);border-radius:2px}
+.map-label.future:before{background:#16855b}
+.matrix-wrap{display:grid;grid-template-columns:22px 1fr;gap:7px}
+.matrix-y{writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:800;letter-spacing:.04em;color:var(--muted)}
+.matrix{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:5px;min-height:224px}
+.matrix-cell{position:relative;border-radius:9px;padding:11px;background:#f5f7f9;border:1px solid #e5e9ed}
+.matrix-cell.quick{background:#fff0e5;border-color:#f4b08f}
+.matrix-cell.strategic{background:#edf8f2;border-color:#b9e1ca}
+.matrix-cell h4{font-size:.74rem;color:var(--navy);margin:0 0 7px}
+.matrix-cell p{font-size:.73rem;color:var(--muted);margin:0;line-height:1.4}
+.matrix-cell .dot{display:inline-block;width:7px;height:7px;background:var(--orange);border-radius:50%;margin-right:5px}
+.matrix-cell.strategic .dot{background:#16855b}
+.matrix-x{display:flex;justify-content:space-between;margin:7px 0 0 29px;font-size:.68rem;color:var(--muted)}
+.matrix-x strong{color:var(--navy)}
+.priority-note{font-size:.78rem;color:var(--muted);padding:11px 12px;background:#fff8f4;border-radius:9px;margin-top:14px}
+.roadmap-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.roadmap-phase{border-top:3px solid var(--orange);padding:11px 12px;background:#fff8f4;border-radius:0 0 9px 9px}
+.roadmap-phase:nth-child(2){border-color:#e9a35d}
+.roadmap-phase:nth-child(3){border-color:#16855b}
+.roadmap-phase b{display:block;color:var(--navy);font-size:.8rem}
+.roadmap-phase small{display:block;color:var(--muted);font-size:.73rem;margin-top:5px;line-height:1.4}
+@media(max-width:850px){.consulting-visuals{grid-template-columns:1fr}.process-lane{gap:13px}.process-node{padding:10px 5px}.process-node b{font-size:.72rem}}
+@media(max-width:540px){.visual-panel{padding:16px}.process-lane{grid-template-columns:1fr;gap:8px}.process-node{min-height:auto;display:grid;grid-template-columns:30px 1fr;gap:0 8px;text-align:left;align-items:center;padding:10px 12px}.process-node .node-icon{grid-row:span 2;margin:0}.process-node small{margin-top:2px}.process-node:not(:last-child):after{content:"↓";right:12px;top:auto;bottom:-15px;z-index:2;font-size:17px}.matrix{min-height:205px}.matrix-cell{padding:8px}.matrix-cell p{font-size:.68rem}.roadmap-strip{grid-template-columns:1fr}}
+
+
+/* Additional consulting frameworks: SIPOC, SWOT and Pareto */
+.framework-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.framework-panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 8px 26px #102a4309;min-width:0}
+.framework-panel h3{color:var(--navy);margin:5px 0 7px;font-size:1.12rem}
+.framework-panel p{color:var(--muted);font-size:.87rem;margin:0 0 14px}
+.sipoc-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.sipoc-col{border:1px solid #f1dfd4;border-radius:9px;overflow:hidden;background:#fffaf7}
+.sipoc-col b{display:block;background:var(--orange-pale);color:var(--orange-dark);padding:8px 5px;text-align:center;font-size:.72rem}
+.sipoc-col span{display:block;padding:9px 6px;color:var(--ink);font-size:.72rem;line-height:1.4;min-height:76px;text-align:center}
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.swot-cell{padding:11px;border-radius:9px;border:1px solid #e7eaf0;background:#f8fafc}
+.swot-cell:nth-child(1){background:#fff2e9;border-color:#f5c9b2}.swot-cell:nth-child(2){background:#effaf5;border-color:#bce5d0}.swot-cell:nth-child(3){background:#f2f6ff;border-color:#cad8f5}.swot-cell:nth-child(4){background:#fff8e9;border-color:#f2dfae}
+.swot-cell b{display:block;color:var(--navy);font-size:.78rem;margin-bottom:4px}.swot-cell small{color:var(--muted);font-size:.73rem;line-height:1.45;display:block}
+.pareto-bars{display:grid;gap:9px;margin:12px 0 4px}.pareto-row{display:grid;grid-template-columns:112px 1fr 35px;align-items:center;gap:8px}.pareto-row label{font-size:.73rem;color:var(--ink)}.pareto-track{height:13px;background:#f1f3f5;border-radius:99px;overflow:hidden}.pareto-fill{height:100%;background:linear-gradient(90deg,#f45b20,#ff9a61);border-radius:99px}.pareto-row strong{font-size:.72rem;color:var(--navy);text-align:right}.framework-foot{font-size:.75rem!important;margin-top:12px!important;padding:10px 12px;background:#fff8f4;border-radius:8px}
+@media(max-width:850px){.framework-grid{grid-template-columns:1fr}}
+@media(max-width:540px){.framework-panel{padding:15px}.sipoc-grid{grid-template-columns:1fr;gap:5px}.sipoc-col{display:grid;grid-template-columns:86px 1fr}.sipoc-col b{display:flex;align-items:center;justify-content:center}.sipoc-col span{text-align:left;min-height:0}.pareto-row{grid-template-columns:92px 1fr 30px;gap:6px}}
+
+
+/* Expandable engagement details */
+.engage-card details{margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
+.engage-card details summary{list-style:none;display:inline-flex;align-items:center;gap:8px;cursor:pointer;color:var(--orange-dark);font-weight:850;font-size:.9rem}
+.engage-card details summary::-webkit-details-marker{display:none}
+.engage-card details summary:after{content:'+';display:inline-grid;place-items:center;width:22px;height:22px;border:1px solid #f3b092;border-radius:50%;font-size:1rem;line-height:1}
+.engage-card details[open] summary:after{content:'−'}
+.engage-detail{padding-top:12px;color:var(--muted);font-size:.94rem}
+.engage-detail h4{color:var(--navy);font-size:.98rem;margin:14px 0 5px}
+.engage-detail ul{margin:5px 0 12px;padding-left:19px}
+.engage-detail li{margin:4px 0}
+.engage-detail .deliverable{background:var(--soft);border-left:3px solid var(--orange);padding:10px 12px;border-radius:0 8px 8px 0;color:var(--ink);margin-top:12px}
+
 </style></head><body>
 <nav class="nav"><div class="container navin"><a class="brand" href="#home">VIVEK <span>PANDEY</span><small>F&amp;A TRANSFORMATION CONSULTANT</small></a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button><div class="navlinks" id="navlinks"><a class="active" href="#home">Home</a><a href="#services">Services</a><a href="#about">About Me</a><a href="#methodology">Methodology</a><a href="#value">Value</a><a href="#experience">Experience</a><a href="#insights">Insights</a><a href="#contact">Contact</a></div><a class="navcta" href="#contact">Let's Connect <span>→</span></a></div></nav>
 <header class="hero" id="home"><div class="container hero-grid"><div><div class="kicker">Strategy <span>•</span> Process <span>•</span> People <span>•</span> Technology <span>•</span> AI <span>•</span> Business Impact</div><h1>Transforming<br>F&amp;A for a <span>Smarter Tomorrow</span></h1><h2>Independent F&amp;A Digital Transformation Consultant<br>PTP / S2P Transformation &amp; Advisory</h2><p class="hero-copy">Helping finance and procurement teams simplify complex processes, strengthen controls, improve supplier experience and build a practical roadmap from manual operations to connected, data-led and automation-enabled workflows.</p><div class="actions"><a class="btn primary" href="#services">Explore Services <span>→</span></a><a class="btn secondary" href="mailto:vivekpandey132@gmail.com?subject=Consulting%20Profile%20Request">Request Consulting Profile ↓</a></div><div class="pills"><span class="pill"><b>▣</b> 14+ Years Experience</span><span class="pill"><b>◉</b> F&amp;A and PTP</span><span class="pill"><b>⚙</b> ERP: SAP · Oracle · Epicor</span><span class="pill"><b>✧</b> GenAI · RAG · Workflow Automation</span></div></div><div class="hero-visual personal-hero" aria-label="Vivek Pandey professional portrait and consulting principles">
@@ -352,10 +424,190 @@ section{padding:78px 0}.section-kicker{font-size:.77rem;letter-spacing:.17em;tex
  </div>
 </section>
 
-<section class="band" id="methodology"><div class="container"><div class="section-kicker">How I work</div><h2 class="section-title">A structured path from problem to outcome</h2><p class="section-intro">A repeatable approach built around evidence, root causes, practical design and sustained adoption.</p><div class="two-col"><div><div class="step"><div class="step-no">01</div><div><h3>Discover &amp; align</h3><p>Clarify business objectives, scope, stakeholders, constraints and success measures.</p></div></div><div class="step"><div class="step-no">02</div><div><h3>Baseline &amp; map</h3><p>Review volumes, cycle times, aging, handoffs and process variants; create SIPOC and process maps.</p></div></div><div class="step"><div class="step-no">03</div><div><h3>Diagnose root causes</h3><p>Use Pareto, 5 Whys, fishbone and exception analysis to distinguish symptoms from causes.</p></div></div></div><div><div class="step"><div class="step-no">04</div><div><h3>Design the future state</h3><p>Define standard workflows, ownership, controls, decision rules and technology needs.</p></div></div><div class="step"><div class="step-no">05</div><div><h3>Prioritize &amp; deliver</h3><p>Sequence initiatives by value, effort, risk and dependency; translate them into a delivery roadmap.</p></div></div><div class="step"><div class="step-no">06</div><div><h3>Measure &amp; sustain</h3><p>Track agreed KPIs, adoption, control effectiveness and benefits against an approved baseline.</p></div></div></div></div></div></section>
+<section class="band" id="methodology"><div class="container"><div class="section-kicker">How I work</div><h2 class="section-title">A structured path from problem to outcome</h2><p class="section-intro">A repeatable approach built around evidence, root causes, practical design and sustained adoption.</p><div class="two-col"><div><div class="step"><div class="step-no">01</div><div><h3>Discover &amp; align</h3><p>Clarify business objectives, scope, stakeholders, constraints and success measures.</p></div></div><div class="step"><div class="step-no">02</div><div><h3>Baseline &amp; map</h3><p>Review volumes, cycle times, aging, handoffs and process variants; create SIPOC and process maps.</p></div></div><div class="step"><div class="step-no">03</div><div><h3>Diagnose root causes</h3><p>Use Pareto, 5 Whys, fishbone and exception analysis to distinguish symptoms from causes.</p></div></div></div><div><div class="step"><div class="step-no">04</div><div><h3>Design the future state</h3><p>Define standard workflows, ownership, controls, decision rules and technology needs.</p></div></div><div class="step"><div class="step-no">05</div><div><h3>Prioritize &amp; deliver</h3><p>Sequence initiatives by value, effort, risk and dependency; translate them into a delivery roadmap.</p></div></div><div class="step"><div class="step-no">06</div><div><h3>Measure &amp; sustain</h3><p>Track agreed KPIs, adoption, control effectiveness and benefits against an approved baseline.</p></div></div></div></div>
+<div class="consulting-visuals" aria-label="Illustrative process redesign and prioritization tools">
+ <article class="visual-panel">
+  <div class="visual-eyebrow">Example deliverable · process redesign</div>
+  <h3>Map the current flow. Design a better one.</h3>
+  <p class="visual-sub">A simplified AP invoice journey showing where discovery typically looks for delays, rework and control gaps.</p>
+  <div class="map-label">As-is · common friction points to validate</div>
+  <div class="process-lane">
+   <div class="process-node"><span class="node-icon">✉</span><b>Invoice received</b><small>Multiple channels</small></div>
+   <div class="process-node"><span class="node-icon">⌕</span><b>Manual checks</b><small>Repeated validation</small></div>
+   <div class="process-node"><span class="node-icon">↔</span><b>Exception handoff</b><small>Unclear ownership</small></div>
+   <div class="process-node"><span class="node-icon">◷</span><b>Approval queue</b><small>Limited visibility</small></div>
+   <div class="process-node"><span class="node-icon">▤</span><b>Post &amp; pay</b><small>Late issue discovery</small></div>
+  </div>
+  <div class="map-label future">To-be · target-state design options</div>
+  <div class="process-lane">
+   <div class="process-node to-be"><span class="node-icon">⇩</span><b>Capture &amp; classify</b><small>Standard intake</small></div>
+   <div class="process-node to-be"><span class="node-icon">✓</span><b>Validate early</b><small>Rules &amp; master data</small></div>
+   <div class="process-node to-be"><span class="node-icon">◎</span><b>Route by rule</b><small>Named owner / SLA</small></div>
+   <div class="process-node to-be"><span class="node-icon">▣</span><b>Track exceptions</b><small>Queue &amp; aging view</small></div>
+   <div class="process-node to-be"><span class="node-icon">↗</span><b>Post with control</b><small>Audit trail</small></div>
+  </div>
+  <div class="priority-note"><strong>Design principle:</strong> standardize and remove avoidable handoffs first; automate only where rules, data and controls are ready. Actual process maps are tailored to client workshops and evidence.</div>
+ </article>
+ <article class="visual-panel">
+  <div class="visual-eyebrow">Example deliverable · prioritization</div>
+  <h3>Prioritize by value, effort and risk.</h3>
+  <p class="visual-sub">An illustrative impact–effort matrix to make trade-offs transparent with process owners and sponsors.</p>
+  <div class="matrix-wrap">
+   <div class="matrix-y">BUSINESS IMPACT ↑</div>
+   <div class="matrix">
+    <div class="matrix-cell strategic"><h4><span class="dot"></span>Strategic bets</h4><p>Workflow redesign<br>ERP / data fixes<br>Control-by-design</p></div>
+    <div class="matrix-cell quick"><h4><span class="dot"></span>Quick wins</h4><p>Standard templates<br>Clear ownership<br>Targeted auto-routing</p></div>
+    <div class="matrix-cell"><h4><span class="dot"></span>Defer / simplify</h4><p>Low-value customization<br>Cosmetic changes</p></div>
+    <div class="matrix-cell"><h4><span class="dot"></span>Plan carefully</h4><p>High-effort changes with<br>dependencies or control risk</p></div>
+   </div>
+  </div>
+  <div class="matrix-x"><span>Lower effort</span><strong>IMPLEMENTATION EFFORT →</strong><span>Higher effort</span></div>
+  <div class="roadmap-strip">
+   <div class="roadmap-phase"><b>Now · stabilize</b><small>Fix data, clarify owners, remove obvious rework.</small></div>
+   <div class="roadmap-phase"><b>Next · standardize</b><small>Align SOPs, rules, controls and exception paths.</small></div>
+   <div class="roadmap-phase"><b>Then · enable</b><small>Sequence automation and AI after readiness checks.</small></div>
+  </div>
+  <div class="priority-note"><strong>Decision criteria:</strong> expected benefit, customer / supplier impact, control risk, effort, dependencies, data readiness and change capacity. Scores and rankings are agreed with the client—not assumed in advance.</div>
+ </article>
+</div>
+<div class="framework-grid" aria-label="Illustrative consulting frameworks">
+ <article class="framework-panel">
+  <div class="visual-eyebrow">Framework · scope the process</div>
+  <h3>SIPOC: align on the end-to-end process</h3>
+  <p>Use SIPOC at the start of a PTP health check to agree boundaries, key handoffs and what needs deeper investigation.</p>
+  <div class="sipoc-grid">
+   <div class="sipoc-col"><b>Suppliers</b><span>Business units<br>Vendors<br>Master data team</span></div>
+   <div class="sipoc-col"><b>Inputs</b><span>Invoice<br>PO / receipt<br>Vendor master</span></div>
+   <div class="sipoc-col"><b>Process</b><span>Receive<br>Validate<br>Approve &amp; post</span></div>
+   <div class="sipoc-col"><b>Outputs</b><span>Posted invoice<br>Payment-ready item<br>Exception record</span></div>
+   <div class="sipoc-col"><b>Customers</b><span>Supplier<br>AP team<br>Finance / business</span></div>
+  </div>
+  <p class="framework-foot"><strong>Workshop output:</strong> agreed scope, stakeholders, inputs/outputs, process boundaries and questions for validation.</p>
+ </article>
+ <article class="framework-panel">
+  <div class="visual-eyebrow">Framework · assess the environment</div>
+  <h3>SWOT: understand transformation readiness</h3>
+  <p>Structure stakeholder discussion around internal capabilities and external constraints before defining the roadmap.</p>
+  <div class="swot-grid">
+   <div class="swot-cell"><b>Strengths</b><small>Existing ERP capability<br>Experienced process owners<br>Available operating data</small></div>
+   <div class="swot-cell"><b>Weaknesses</b><small>Manual handoffs<br>Process variants<br>Incomplete root-cause codes</small></div>
+   <div class="swot-cell"><b>Opportunities</b><small>Standardized workflows<br>Better exception analytics<br>Rules-based automation</small></div>
+   <div class="swot-cell"><b>Threats</b><small>Data quality constraints<br>Change fatigue<br>Control or compliance risks</small></div>
+  </div>
+  <p class="framework-foot"><strong>Use carefully:</strong> these are prompts to validate with the client, not pre-established findings.</p>
+ </article>
+ <article class="framework-panel">
+  <div class="visual-eyebrow">Framework · find the vital few</div>
+  <h3>Pareto analysis: focus on the largest drivers</h3>
+  <p>Rank exception categories by volume or cost, then validate the few causes responsible for the largest share of avoidable work.</p>
+  <div class="pareto-bars">
+   <div class="pareto-row"><label>PO mismatch</label><div class="pareto-track"><div class="pareto-fill" style="width:82%"></div></div><strong>82</strong></div>
+   <div class="pareto-row"><label>Missing receipt</label><div class="pareto-track"><div class="pareto-fill" style="width:64%"></div></div><strong>64</strong></div>
+   <div class="pareto-row"><label>Master data</label><div class="pareto-track"><div class="pareto-fill" style="width:43%"></div></div><strong>43</strong></div>
+   <div class="pareto-row"><label>Tax / coding</label><div class="pareto-track"><div class="pareto-fill" style="width:29%"></div></div><strong>29</strong></div>
+   <div class="pareto-row"><label>Other</label><div class="pareto-track"><div class="pareto-fill" style="width:18%"></div></div><strong>18</strong></div>
+  </div>
+  <p class="framework-foot"><strong>Illustrative values only:</strong> replace with actual exception counts, calculate cumulative contribution, and investigate validated root causes.</p>
+ </article>
+ <article class="framework-panel">
+  <div class="visual-eyebrow">Framework · turn analysis into action</div>
+  <h3>From diagnosis to prioritized action</h3>
+  <p>Combine SIPOC scope, SWOT readiness and Pareto evidence to build a focused action backlog.</p>
+  <div class="roadmap-strip">
+   <div class="roadmap-phase"><b>1 · Evidence</b><small>Validate volumes, samples, handoffs, control gaps and stakeholder input.</small></div>
+   <div class="roadmap-phase"><b>2 · Decisions</b><small>Compare benefit, effort, risk, dependencies and readiness.</small></div>
+   <div class="roadmap-phase"><b>3 · Action</b><small>Assign owners, due dates, KPIs and governance checkpoints.</small></div>
+  </div>
+  <p class="framework-foot"><strong>Deliverable:</strong> prioritized improvement register with rationale, accountable owner and measurable success criteria.</p>
+ </article>
+</div>
+</div></section>
 <section id="value"><div class="container"><div class="section-kicker">Value realization</div><h2 class="section-title">Focus on outcomes that can be measured</h2><p class="section-intro">Value opportunities are identified from client baselines and validated with Finance and process owners before targets are committed.</p><div class="value-grid"><article class="value-tile"><div class="service-icon">◷</div><h3>Cycle time &amp; throughput</h3><p>Assess receipt-to-post time, queue aging, handoffs and bottlenecks to identify practical flow improvements.</p></article><article class="value-tile"><div class="service-icon">✓</div><h3>First-time-right &amp; exceptions</h3><p>Analyze repeat defects, blocked invoices, coding issues and upstream causes of rework.</p></article><article class="value-tile"><div class="service-icon">₹</div><h3>Cost &amp; productivity</h3><p>Baseline manual effort, cost per invoice, workload distribution and addressable automation opportunities.</p></article><article class="value-tile"><div class="service-icon">◇</div><h3>Controls &amp; compliance</h3><p>Strengthen approval paths, audit trails, duplicate checks and exception governance.</p></article><article class="value-tile"><div class="service-icon">♡</div><h3>Supplier experience</h3><p>Review query drivers, response times, repeat contacts and case-status visibility.</p></article><article class="value-tile"><div class="service-icon">↗</div><h3>Working-capital discipline</h3><p>Assess payment terms, discount opportunities and payment prioritization with Finance.</p></article></div><div class="note"><strong>How value is quantified:</strong> Baseline effort saved × annual volume × validated cost per unit, plus verified leakage avoided or discounts captured, less implementation and run costs. These are assessment methods, not pre-claimed savings.</div></div></section>
 <section class="band" id="experience"><div class="container"><div class="section-kicker">Relevant experience</div><h2 class="section-title">Transformation themes grounded in delivery experience</h2><p class="section-intro">Representative examples of the kinds of problems, functional design and deliverables I have worked with. Client-specific results are not implied.</p><div class="case-grid"><article class="case-card"><div class="case-label">Workflow digitization</div><h3>From shared-mailbox handling to centralized case management</h3><p><strong>Challenge:</strong> Query handling spread across group mailboxes with manual follow-up and limited ownership visibility.</p><p><strong>Approach:</strong> Centralized case creation, email integration, acknowledgements, routing, follow-up logic and operational reporting.</p><p><strong>Deliverables:</strong> Process maps, functional requirements, rules, UAT scenarios and KPI definitions.</p></article><article class="case-card"><div class="case-label">AP / supplier workflows</div><h3>Functional solutioning for AP and supplier processes</h3><p><strong>Challenge:</strong> Manual handoffs and inconsistent visibility across process steps.</p><p><strong>Approach:</strong> Define workflow capabilities, exception paths, business rules and user-centered requirements.</p><p><strong>Deliverables:</strong> Solution options, user stories, acceptance criteria, controls and release priorities.</p></article><article class="case-card"><div class="case-label">Process excellence</div><h3>Standardization and performance governance</h3><p><strong>Challenge:</strong> Process variation and limited visibility into aging and service performance.</p><p><strong>Approach:</strong> Harmonize workflows, clarify ownership and establish practical KPI governance.</p><p><strong>Deliverables:</strong> SIPOC, SOP framework, RACI, KPI dictionary and reporting requirements.</p></article></div></div></section>
-<section id="engagements"><div class="container"><div class="section-kicker">Ways to engage</div><h2 class="section-title">Start with a focused business problem</h2><p class="section-intro">Engagements can be tailored to the scope, available data, stakeholder access and transformation maturity.</p><div class="engagements"><article class="engage-card"><span class="duration">2–3 weeks · indicative</span><h3>PTP Health Check</h3><p>Process walkthroughs, KPI baseline, root-cause register and prioritized improvement actions.</p></article><article class="engage-card"><span class="duration">3–5 weeks · indicative</span><h3>Transformation Roadmap</h3><p>Future-state design, initiative prioritization, dependencies, business case and ownership.</p></article><article class="engage-card"><span class="duration">Scoped engagement</span><h3>Functional &amp; Delivery Advisory</h3><p>Requirements, workflow design, backlog, UAT, governance and delivery assurance.</p></article></div></div></section>
+<section id="engagements"><div class="container">
+<div class="section-kicker">Ways to engage</div>
+<h2 class="section-title">Start with a focused business problem</h2>
+<p class="section-intro">Choose a focused diagnostic, a transformation plan or hands-on functional and delivery support. Scope and timing are agreed around business priorities, data availability and stakeholder access.</p>
+<div class="engagements">
+<article class="engage-card">
+<span class="duration">2–3 weeks · indicative</span>
+<h3>PTP Health Check</h3>
+<p>Assess how the current Procure-to-Pay process performs, where work gets stuck, why exceptions repeat and which improvements deserve attention first.</p>
+<details>
+<summary>Read more</summary>
+<div class="engage-detail">
+<h4>What we review</h4>
+<ul>
+<li><strong>Process &amp; handoffs:</strong> walkthroughs from requisition/PO through receipt, invoice processing, exception resolution and payment, with current-state process mapping.</li>
+<li><strong>Performance baseline:</strong> available data for invoice cycle time, touchless/straight-through processing, first-time match, exception rate and ageing, payment accuracy, on-time payment and supplier queries.</li>
+<li><strong>Controls &amp; compliance:</strong> approval paths, segregation of duties, duplicate-payment safeguards, audit trail and policy adherence.</li>
+<li><strong>Data &amp; technology:</strong> ERP/workflow touchpoints, master-data quality, manual re-keying, reporting gaps and automation readiness.</li>
+<li><strong>Root causes:</strong> Pareto analysis of exception categories, stakeholder interviews and validation of upstream causes rather than symptoms.</li>
+</ul>
+<h4>How the assessment works</h4>
+<ul>
+<li>Kick-off and scope confirmation, including entities, towers, process variants and data sources.</li>
+<li>Stakeholder interviews, sample-based walkthroughs and available KPI/data review.</li>
+<li>Current-state map, SIPOC and issue/root-cause register.</li>
+<li>Prioritization by impact, effort, control risk, dependencies and readiness.</li>
+</ul>
+<div class="deliverable"><strong>Typical outputs:</strong> current-state process map, KPI baseline with definitions, exception/Pareto view, control and gap register, prioritized quick wins and a practical action plan with owners. Findings and benefits are validated against client evidence.</div>
+</div>
+</details>
+</article>
+<article class="engage-card">
+<span class="duration">3–5 weeks · indicative</span>
+<h3>Transformation Roadmap</h3>
+<p>Turn validated process and performance gaps into a sequenced plan for standardization, controls, workflow, ERP optimization and automation.</p>
+<details>
+<summary>Read more</summary>
+<div class="engage-detail">
+<h4>What we shape</h4>
+<ul>
+<li><strong>Target-state design:</strong> future-state process flows, standard work, decision rules, exception paths, roles and governance.</li>
+<li><strong>Opportunity portfolio:</strong> process simplification, SOP harmonization, master-data fixes, workflow improvements, ERP capabilities, analytics and automation/AI use cases.</li>
+<li><strong>Prioritization:</strong> transparent impact-versus-effort assessment considering control/compliance risk, supplier and user impact, dependencies, data readiness and change capacity.</li>
+<li><strong>Business case:</strong> define the value hypothesis, baseline, calculation method, cost/effort assumptions, benefit owner and measurement approach; quantify only where evidence supports it.</li>
+<li><strong>Sequencing:</strong> stabilize the basics, standardize the process and controls, then enable technology where readiness is demonstrated.</li>
+</ul>
+<h4>How prioritization works</h4>
+<ul>
+<li>Separate mandatory control or compliance items from discretionary improvement ideas.</li>
+<li>Compare expected value and reach with implementation effort and delivery risk.</li>
+<li>Identify dependencies—for example, data cleanup or policy alignment required before automation.</li>
+<li>Group initiatives into quick wins, foundational enablers and larger transformation waves.</li>
+<li>Review the proposed order with business, procurement, finance, operations and technology stakeholders.</li>
+</ul>
+<div class="deliverable"><strong>Typical outputs:</strong> target-state process maps, initiative backlog, impact/effort matrix, dependency view, phased roadmap, governance model, KPI/benefit tracking plan and decision log.</div>
+</div>
+</details>
+</article>
+<article class="engage-card">
+<span class="duration">Scoped engagement</span>
+<h3>Functional &amp; Delivery Advisory</h3>
+<p>Bridge business needs and delivery teams through clear requirements, workable designs, testable outcomes and practical governance.</p>
+<details>
+<summary>Read more</summary>
+<div class="engage-detail">
+<h4>Functional advisory</h4>
+<ul>
+<li>Facilitate discovery workshops and translate business needs into process flows, requirements, user stories and acceptance criteria.</li>
+<li>Design workflow routing, roles, approvals, exception handling, notifications, auditability and reporting requirements.</li>
+<li>Support ERP/workflow fit-gap assessment and document assumptions, business rules, integrations and dependencies.</li>
+<li>Review solution options with business, operations, architecture and technology teams to keep designs usable and supportable.</li>
+</ul>
+<h4>Delivery assurance</h4>
+<ul>
+<li>Structure and refine the backlog; support prioritization, sprint planning, dependency management and release readiness.</li>
+<li>Define UAT scenarios, test data needs, expected outcomes, defect triage and business sign-off criteria.</li>
+<li>Coordinate stakeholder decisions, RAID tracking, status reporting, change control and governance checkpoints.</li>
+<li>Support adoption through SOPs, training inputs, operational handover and post-go-live issue review.</li>
+</ul>
+<div class="deliverable"><strong>Typical outputs:</strong> requirements pack, process and workflow design, prioritized backlog, acceptance criteria, UAT plan and scenarios, decision/RAID logs, release-readiness checklist and operational handover inputs.</div>
+</div>
+</details>
+</article>
+</div></div></section>
 <section class="band" id="insights"><div class="container"><div class="section-kicker">Practical perspective</div><h2 class="section-title">Transformation starts with the process—not the tool</h2><div class="two-col"><div><p class="section-intro">Automation magnifies the process it is built on. Before investing in AI or workflow technology, identify the source of exceptions, standardize decision rules, improve data quality and agree how value will be measured.</p></div><div><ul class="check-list"><li>Separate policy gaps from process and system gaps.</li><li>Fix recurring upstream causes before automating workarounds.</li><li>Build human review and auditability into AI-enabled workflows.</li><li>Assign a business owner to every KPI and benefit.</li></ul></div></div></div></section>
 <section class="contact" id="contact"><div class="container"><div class="section-kicker">Let's connect</div><h2 class="section-title">Have an F&amp;A or PTP transformation challenge?</h2><p class="section-intro">Let's discuss the business problem, the evidence available and the most practical path to measurable improvement.</p><div class="contact-grid"><div><h3 style="font-size:1.7rem;margin-bottom:5px">Vivek Pandey</h3><p>Independent F&amp;A Digital Transformation Consultant<br>PTP / S2P · Process Excellence · ERP &amp; AI Enablement</p><p>Available for advisory, diagnostic, functional solutioning and transformation delivery engagements.</p></div><div class="contact-panel"><p><strong>Email</strong><br><a href="mailto:vivekpandey132@gmail.com">vivekpandey132@gmail.com</a></p><p><strong>Mobile / WhatsApp</strong><br><a href="https://wa.me/919930141710">+91 99301 41710</a></p><p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/vivpande">linkedin.com/in/vivpande</a></p><a class="btn primary" href="mailto:vivekpandey132@gmail.com?subject=F%26A%20Transformation%20Discussion">Start a conversation →</a></div></div></div></section>
 <footer class="footer"><div class="container footer-inner"><span>© Vivek Pandey · Independent Consulting</span><span>F&amp;A · PTP / S2P · Process Excellence · ERP · AI</span></div></footer>
